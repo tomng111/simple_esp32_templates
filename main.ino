@@ -67,19 +67,19 @@ void loop(){
             
             // turns the GPIOs on and off
             if (header.indexOf("GET /26/on") >= 0) {
-              Serial.println("LED1 on");
+              Serial.println("LED1-EIN");
               led1State = "on";
               digitalWrite(led1, HIGH);
             } else if (header.indexOf("GET /26/off") >= 0) {
-              Serial.println("LED1 off");
+              Serial.println("LED1-AUS");
               led1State = "off";
               digitalWrite(led1, LOW);
             } else if (header.indexOf("GET /27/on") >= 0) {
-              Serial.println("LED2 on");
+              Serial.println("LED2-EIN");
               led2State = "on";
               digitalWrite(led2, HIGH);
             } else if (header.indexOf("GET /27/off") >= 0) {
-              Serial.println("LED2 off");
+              Serial.println("LED2-AUS");
               led2State = "off";
               digitalWrite(led2, LOW);
             }
